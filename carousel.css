@@ -48,12 +48,18 @@
     padding-left: 100px;
 }
 
+#carousel-left:hover {
+    background-color: #00000079;
+}
+
 #carousel-right {
     text-align: left;
     padding-right: 100px;
 }
 
-.carousel-centerText {}
+#carousel-right:hover {
+    background-color: #00000079;
+}
 
 .carouselImg {
     z-index: -1;
@@ -64,10 +70,17 @@
     background-position: center;
 }
 
-.img1 {
-    background-image: url("images/me.jpg");
+.carouselDeselect {
+    display: none;
 }
 
-.img2 {
-    background-image: url("images/Knight Squat Version2.jpg");
+.carouselUnselectable {
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
 }
